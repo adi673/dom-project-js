@@ -4,10 +4,10 @@ const previous_guess=document.querySelector('.guesses')
 const Guess_left=document.querySelector('.lastResult')
 const min=1
 const max=100
-
+const value=Math.floor(Math.random()*(max-min+1)+min)
 form.addEventListener('submit',(e)=>{
   e.preventDefault()
-  const value=Math.floor(Math.random()*(max-min+1)+min)
+ 
   console.log(value)
   if(Guess_remain>0 ){
     const input=parseInt(document.querySelector('input').value)
